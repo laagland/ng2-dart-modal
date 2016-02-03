@@ -1,4 +1,4 @@
-part of schemas
+part of schemas;
 
 ModalConfig _defaultConfig;
 
@@ -28,8 +28,8 @@ class ModalConfig {
 	//keyboard: Array<number> | number;
     dynamic keyboard;
 
-    ModalConfig(String size = 'lg', bool isBlocking = false,
-                dynamic keyboard = [27]) {
+    ModalConfig(String size, bool isBlocking,
+                dynamic keyboard) {
         this.size = size;
         this.isBlocking = isBlocking;
         this.keyboard = keyboard;
@@ -67,4 +67,5 @@ class ModalConfig {
 
 }
 
+//Todo: assign value
 _defaultConfig = new ModalConfig('lg', true, [27]);

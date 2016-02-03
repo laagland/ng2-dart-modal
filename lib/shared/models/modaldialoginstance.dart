@@ -1,4 +1,4 @@
-part of schemas
+part of schemas;
 
 /**
  * API to an open modal window.
@@ -16,7 +16,7 @@ class ModalDialogInstance {
 
     ModalDialogInstance(ModalConfig config) {
 		//Todo: Future?
-        //this._resultDefered = PromiseWrapper.completer();
+//        this._resultDefered = Future.completer();
     }
 
     set backdropRef(ComponentRef value) {
@@ -38,7 +38,7 @@ class ModalDialogInstance {
     /**
      *  Close the modal with a return value, i.e: result.
      */
-    void close(dynamic result = null) {
+    void close(dynamic result) {
 		//Todo: first arg checks if method is implemented, not possible in Dart? See ICustomModalComponent in ModalDialogInstance
         if ( this.contentRef.instance.beforeClose != null &&
                 this.contentRef.instance.beforeClose() == true ) return;

@@ -1,4 +1,4 @@
-part of schemas
+part of schemas;
 
 /**
  * A Type used as a binding key for dialog window Components
@@ -9,7 +9,7 @@ class ICustomModal {
 }
 
 //TODO: implement as interface
-class ICustomModalComponent {
+abstract class ICustomModalComponent {
     ModalDialogInstance dialog;
 
     /**
