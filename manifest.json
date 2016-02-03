@@ -1,0 +1,20 @@
+{
+  "dependencies": {},
+
+  "config": {
+    "sass": {
+      "style": "\"expanded\"",
+      "compass": true
+    },
+    "devUrl": "http://angular2.dev/"
+  },
+
+  "paths": {
+    "sass": "web/assets/scss/**/*.scss",
+    "css": "web/assets/css/**/*.css",
+    "cssDir": "web/assets/css",
+    "js": "js/**/*.js",
+    "jsDir": "js/"
+  }
+
+}

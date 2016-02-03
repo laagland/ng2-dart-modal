@@ -1,0 +1,25 @@
+{
+  "name": "ng2-dart-start",
+  "description": "Quickstart for Angular2 Dart",
+  "main": "web/index.html",
+  "authors": [
+    "Louis Laagland <louis@wunderful.nl>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "packages/ng2-dart-boilerplate/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}
