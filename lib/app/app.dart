@@ -1,4 +1,4 @@
-library start;
+library ng_dart_modal;
 
 import 'dart:async';
 import 'dart:html';
@@ -14,6 +14,16 @@ import 'package:ng2-dart-start/shared/schemas.dart';
 //components
 part 'main.component.dart';
 part 'components/home.dart';
+
+part 'components/modalbackdrop.dart';
+part 'components/bootstrapmodalcontainer.dart';
+
+//providers
+part 'providers/modal.dart';
+
+//common
+part 'common/yesnomodal.dart';
+part 'common/okonlymodal.dart';
 
 //services
 part 'services/query_service.dart';
