@@ -1,0 +1,1 @@
+part of ng2_dart_modal
