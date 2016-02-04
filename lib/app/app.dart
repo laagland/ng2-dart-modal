@@ -25,10 +25,7 @@ part 'providers/modal.dart';
 part 'common/yesnomodal.dart';
 part 'common/okonlymodal.dart';
 
-//services
-part 'services/query_service.dart';
-
 //pipes
 
 //injectables
-const List<Type> injectables = const [MainComponent, QueryService];
+const List<Type> injectables = const [MainComponent];
