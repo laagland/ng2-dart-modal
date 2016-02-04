@@ -28,12 +28,8 @@ class ModalConfig {
 	//keyboard: Array<number> | number;
     dynamic keyboard;
 
-    ModalConfig(String size, bool isBlocking,
-                dynamic keyboard) {
-        this.size = size;
-        this.isBlocking = isBlocking;
-        this.keyboard = keyboard;
-    }
+    ModalConfig(this.size, this.isBlocking,
+                this.keyboard);
 
     /**
      * Makes a ModalConfig instance valdud.
@@ -41,6 +37,7 @@ class ModalConfig {
      * @param defaultConfig A Default config to use as master, optional.
      * @returns {ModalConfig} The same config instance sent.
      */
+     //Todo: return type?
     static makeValid(ModalConfig config, {ModalConfig defaultConfig}) {
 	
         defaultConfig = defaultConfig ?? _defaultConfig;
