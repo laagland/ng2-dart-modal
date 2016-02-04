@@ -9,12 +9,14 @@ class ModalDialogInstance {
      * States if the modal is inside a specific element.
      */
     bool inElement;
+    
+    ModalConfig config;
 
     ComponentRef _bootstrapRef;
     ComponentRef _backdropRef;
     dynamic _resultDefered;
 
-    ModalDialogInstance(ModalConfig config) {
+    ModalDialogInstance(this.config) {
 		//Todo: Future?
 //        this._resultDefered = Future.completer();
     }
