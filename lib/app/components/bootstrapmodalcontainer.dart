@@ -1,3 +1,5 @@
+part of ng2_dart_modal;
+
 /**
  * A component that acts as a top level container for an open modal window.
  */
