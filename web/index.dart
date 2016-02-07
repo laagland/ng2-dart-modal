@@ -1,13 +1,19 @@
-import 'package:angular2/angular2.dart';
-import 'package:angular2/bootstrap.dart';
+import 'package:angular2/core.dart';
 import 'package:angular2/router.dart';
-import 'package:ng2-dart-start/app/app.dart';
+import 'package:angular2/bootstrap.dart';
+import 'package:ng2_dart_modal/app.dart';
+import 'package:ng2_dart_modal/src/ng2_dart_modal.dart';
 
 void main() {
-  var app = MainComponent;
-  var bindings = [ROUTER_BINDINGS, injectables,
-  bind(APP_BASE_HREF).toValue('/'),
-  bind(LocationStrategy).toClass(HashLocationStrategy)];
+  var app = DemoApp;
+  var bindings = [injectables,
+    ROUTER_PROVIDERS,
+    provide(ModalConfig, useValue: new ModalConfig(size: 'lg', isBlocking: true, keyboard: 81)),
+    bind(APP_BASE_HREF).toValue('/'),
+    bind(LocationStrategy).toClass(HashLocationStrategy)
+  ];
 
   bootstrap(app, bindings);
 }
+
+//document.addEventListener('DOMContentLoaded', main);
