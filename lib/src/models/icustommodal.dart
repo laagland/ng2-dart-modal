@@ -7,7 +7,6 @@ class ICustomModal {
 	ICustomModal();
 }
 
-//TODO: implement as interface
 abstract class ICustomModalComponent {
     ModalDialogInstance dialog;
 

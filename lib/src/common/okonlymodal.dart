@@ -3,7 +3,6 @@ part of ng2_dart_modal;
 /**
  * Data definition
  */
-//Todo: Check usage and port
 class OKOnlyContent {
     String title = 'Hello World Title';
     String body = 'Hello World Body!';

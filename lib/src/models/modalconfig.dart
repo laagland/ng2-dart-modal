@@ -1,6 +1,6 @@
 part of ng2_dart_modal;
 
-//ModalConfig _defaultConfig = new ModalConfig(size: 'lg', isBlocking: true, keyboard: [27]);
+ModalConfig _defaultConfig = new ModalConfig(size: 'lg', isBlocking: false, keyboard: [27]);
 
 //@Injectable()
 class ModalConfig {
@@ -21,24 +21,23 @@ class ModalConfig {
 
     /**
      * Keyboard value/s that close the modal.
-     * Accepts either a single numeric value or an array of numeric values.
-     * A modal closed by a keyboard stroke will result in a 'reject' notification from the promise.
+     * Accepts either a single numeric value or a List of integer values.
+     * A modal closed by a keyboard stroke will result in a 'reject' notification from the future.
      * Defaults to 27, set `null` implicitly to disable.
      */
-	//keyboard: Array<number> | number;
     dynamic keyboard;
 
     ModalConfig({this.size: 'lg', this.isBlocking: false, this.keyboard: 27});
 
     /**
-     * Makes a ModalConfig instance valdud.
+     * Makes a ModalConfig instance valid.
      * @param config
      * @param defaultConfig A Default config to use as master, optional.
      * @returns {ModalConfig} The same config instance sent.
      */
     static makeValid(ModalConfig config, {ModalConfig defaultConfig}) {
 	
-//        defaultConfig = defaultConfig ?? _defaultConfig;
+        defaultConfig = defaultConfig ?? _defaultConfig;
 
         if (config.size == null)
             config.size = defaultConfig.size;

@@ -1,7 +1,7 @@
 {
   "name": "ng2_dart_modal",
   "version": "0.0.1-alpha.1",
-  "description": "Angular2 Dart Modal",
+  "description": "Modals for Angular2 Dart, port of angular2-modal, see http://shlomiassaf.github.io/angular2-modal/",
   "main": "web/index.html",
   "dependencies": {
     "bower": "^1.7.1"

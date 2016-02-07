@@ -1,8 +1,8 @@
 name: ng2_dart_modal
 version: 0.0.1-alpha.1
 description: >
-  Angular2 Dart Pagination
-  Dart port of ng2-modal, see http://
+  Angular2 Dart Modal
+  Dart port of ng2-modal, see http://shlomiassaf.github.io/angular2-modal/
 author: Louis Laagland <louis@wunderful.nl>
 environment:
   sdk: '>=1.12.0 <2.0.0'

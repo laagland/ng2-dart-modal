@@ -39,7 +39,6 @@ class DemoPage {
         'inElement':new YesNoModalContent('Simple In Element modal', 'Try stacking more modals, click OK to close.', true),
         'customWindow': new AdditionCalculateWindowData(2, 3)
     };
-    /* tslint:enable */
 
     void openDialog(String type) {
         Future<ModalDialogInstance> dialog;

@@ -5,7 +5,7 @@ part of ng2_dart_modal_demo;
  * Top Level Component
  */
 @Component(
-    selector: 'demo-app', // <app></app>
+    selector: 'demo-app',
     // We need to tell Angular's Dependency Injection which providers are in our app.
     providers: const [FORM_PROVIDERS],
     // We need to tell Angular's compiler which directives are in our template.

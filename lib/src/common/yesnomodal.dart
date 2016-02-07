@@ -3,7 +3,6 @@ part of ng2_dart_modal;
 /**
  * Data definition
  */
-//Todo: Check usage
 class YesNoModalContent {
 
     String title = 'Hello World Title';

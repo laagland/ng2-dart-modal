@@ -15,5 +15,3 @@ void main() {
 
   bootstrap(app, bindings);
 }
-
-//document.addEventListener('DOMContentLoaded', main);

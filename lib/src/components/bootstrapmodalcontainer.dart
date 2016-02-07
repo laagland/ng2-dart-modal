@@ -24,10 +24,6 @@ part of ng2_dart_modal;
          </div>
     </div>
     '''
-    //TODO: #modalDialog element is not needed but dynamicComponentLoader doesn't seem to have behavior to inject a component the way we want.
-    //      We need to replace the #modalDialog element but the current implementation only adds it as a sibling.
-    //      see https://github.com/angular/angular/issues/6071
-    /* tslint:enable */
 )
 
 class BootstrapModalContainer {
@@ -49,7 +45,6 @@ class BootstrapModalContainer {
     }
 
     void onClick() {
-        //Todo: Not possible in Dart, create workaround
         if (!this.dialogInstance.config.isBlocking){
             this.dialogInstance.dismiss();
         }
